@@ -31,8 +31,8 @@ function App() {
 
     const FlipUnitContainer = ({ digit, shuffle, unit }) => {
 
-        let currentDigit = digit;
-        let previousDigit = digit - 1;
+        let currentDigit = digit + 1 ;
+        let previousDigit = digit;
 
         if (unit !== "hours") {
             previousDigit = previousDigit === -1 ? 59 : previousDigit;
